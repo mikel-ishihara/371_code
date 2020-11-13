@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int find_n(int e, int u, int o) {
+    float x = u/e;
+    cout << sqrt(x) << endl;
+}
+
+int main()
+{
+    int n = 2;
+    int grid[2][4] = {{1, 2, 0, 3}, {4, 5, 0, 6}};
+
+    for(int i = 0; i < n; i++) {
+        find_n(grid[i][0], grid[i][1], grid[i][2]);
+    }
+    return 0;
+}
